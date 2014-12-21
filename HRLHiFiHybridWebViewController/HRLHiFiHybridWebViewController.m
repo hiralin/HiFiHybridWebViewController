@@ -37,15 +37,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    // webview creation
+    _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_webView];
+
     _progressProxy = [[NJKWebViewProgress alloc] init];
     _webView.delegate = _progressProxy;
     _progressProxy.webViewProxyDelegate = self;
     _progressProxy.progressDelegate = self;
-    
-    // webview creation
-    _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_webView];
 
     // njkwebviewprogressview creation
     CGFloat progressBarHeight = 2.0;
@@ -60,7 +60,19 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar addSubview:_progressView];
+    [self.navigationController.navigationBar addSubview:_progressView];    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSURL *url = [NSURL URLWithString:self.urlString];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    [_webView loadRequest:request];
+    
+    [SVProgressHUD show];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -89,13 +101,21 @@
     return YES;
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [SVProgressHUD dismiss];
+}
 
 #pragma mark -
 #pragma mark NJKWebViewProgressDelegate
 
 - (void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
 {
+    _progressView.progress = progress;
     
+    if (progress >= 1.0) {
+        [SVProgressHUD dismiss];
+    }
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HRLHiFiHybridWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UITabBarController *rootTabBarController = (UITabBarController*)self.window.rootViewController;
+
+    NSArray * titles = @[@"Home",
+                         @"Fav"];
+    NSArray * urls = @[@"https://prime.heyazine.com/",
+                       @"https://prime.heyazine.com/favorites"];
+
+    
+    for (int i = 0; i < [titles count]; i++) {
+        HRLHiFiHybridWebViewController *vc = [[HRLHiFiHybridWebViewController alloc] initWithNibName:nil bundle:nil urlString:urls[i]];
+        
+        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+        nvc.tabBarItem.title = titles[i];
+        
+        [rootTabBarController addChildViewController:nvc];
+    }
+    
     return YES;
 }
 
