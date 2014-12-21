@@ -20,10 +20,16 @@
     // Override point for customization after application launch.
     UITabBarController *rootTabBarController = (UITabBarController*)self.window.rootViewController;
 
-    NSArray * titles = @[@"Home",
-                         @"Fav"];
+    NSArray * titles = @[@"home",
+                         @"search",
+                         @"proposing",
+                         @"fav",
+                         @"info"];
     NSArray * urls = @[@"https://prime.heyazine.com/",
-                       @"https://prime.heyazine.com/favorites"];
+                       @"https://prime.heyazine.com/search",
+                       @"https://prime.heyazine.com/proposing_items",
+                       @"https://prime.heyazine.com/favorites",
+                       @"https://prime.heyazine.com/faq"];
 
     
     for (int i = 0; i < [titles count]; i++) {

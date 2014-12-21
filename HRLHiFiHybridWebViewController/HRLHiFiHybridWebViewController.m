@@ -60,7 +60,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar addSubview:_progressView];    
+    [self.navigationController.navigationBar addSubview:_progressView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -104,6 +104,11 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     [SVProgressHUD dismiss];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    self.navigationItem.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
 #pragma mark -
