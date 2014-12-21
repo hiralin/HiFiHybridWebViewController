@@ -1,0 +1,17 @@
+PODS:
+  - NJKWebViewProgress (HEAD based on 0.2.3):
+    - NJKWebViewProgress/Core (= HEAD based on 0.2.3)
+    - NJKWebViewProgress/ProgressView (= HEAD based on 0.2.3)
+  - NJKWebViewProgress/Core (HEAD based on 0.2.3)
+  - NJKWebViewProgress/ProgressView (HEAD based on 0.2.3)
+  - SVProgressHUD (HEAD based on 1.1.2)
+
+DEPENDENCIES:
+  - NJKWebViewProgress (HEAD)
+  - SVProgressHUD (HEAD)
+
+SPEC CHECKSUMS:
+  NJKWebViewProgress: 721b57080c840c76f70ff6c2dda4f836ee1b27c1
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
+
+COCOAPODS: 0.35.0
