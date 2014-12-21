@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NJKWebViewProgress/NJKWebViewProgress.h>
 
-@interface HRLHiFiHybridWebViewController : UIViewController
+@interface HRLHiFiHybridWebViewController : UIViewController <NJKWebViewProgressDelegate,UIWebViewDelegate>
 
 @property (nonatomic, strong, readonly) UIWebView *webView;
+
+// TODO: to be more cool interface
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                      urlString:(NSString *)urlString;
 
 @end
