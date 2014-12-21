@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71818B1E1A468E20001C2032 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B1D1A468E20001C2032 /* main.m */; };
+		71818B211A468E20001C2032 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B201A468E20001C2032 /* AppDelegate.m */; };
+		71818B241A468E20001C2032 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B231A468E20001C2032 /* FirstViewController.m */; };
+		71818B271A468E20001C2032 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B261A468E20001C2032 /* SecondViewController.m */; };
+		71818B2A1A468E20001C2032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71818B281A468E20001C2032 /* Main.storyboard */; };
+		71818B2C1A468E20001C2032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2B1A468E20001C2032 /* Images.xcassets */; };
+		71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2D1A468E20001C2032 /* LaunchScreen.xib */; };
+		71818B3B1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71818B351A468E20001C2032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71818B101A468E20001C2032 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71818B171A468E20001C2032;
+			remoteInfo = HiFiHybridWebViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71818B181A468E20001C2032 /* HiFiHybridWebViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFiHybridWebViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71818B1C1A468E20001C2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71818B1D1A468E20001C2032 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71818B1F1A468E20001C2032 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71818B201A468E20001C2032 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71818B221A468E20001C2032 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		71818B231A468E20001C2032 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		71818B251A468E20001C2032 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		71818B261A468E20001C2032 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		71818B291A468E20001C2032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71818B2B1A468E20001C2032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		71818B2E1A468E20001C2032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		71818B341A468E20001C2032 /* HiFiHybridWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiFiHybridWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71818B391A468E20001C2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiFiHybridWebViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71818B151A468E20001C2032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71818B311A468E20001C2032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71818B0F1A468E20001C2032 = {
+			isa = PBXGroup;
+			children = (
+				71818B1A1A468E20001C2032 /* HiFiHybridWebViewController */,
+				71818B371A468E20001C2032 /* HiFiHybridWebViewControllerTests */,
+				71818B191A468E20001C2032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71818B191A468E20001C2032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71818B181A468E20001C2032 /* HiFiHybridWebViewController.app */,
+				71818B341A468E20001C2032 /* HiFiHybridWebViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71818B1A1A468E20001C2032 /* HiFiHybridWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71818B1F1A468E20001C2032 /* AppDelegate.h */,
+				71818B201A468E20001C2032 /* AppDelegate.m */,
+				71818B221A468E20001C2032 /* FirstViewController.h */,
+				71818B231A468E20001C2032 /* FirstViewController.m */,
+				71818B251A468E20001C2032 /* SecondViewController.h */,
+				71818B261A468E20001C2032 /* SecondViewController.m */,
+				71818B281A468E20001C2032 /* Main.storyboard */,
+				71818B2B1A468E20001C2032 /* Images.xcassets */,
+				71818B2D1A468E20001C2032 /* LaunchScreen.xib */,
+				71818B1B1A468E20001C2032 /* Supporting Files */,
+			);
+			path = HiFiHybridWebViewController;
+			sourceTree = "<group>";
+		};
+		71818B1B1A468E20001C2032 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71818B1C1A468E20001C2032 /* Info.plist */,
+				71818B1D1A468E20001C2032 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71818B371A468E20001C2032 /* HiFiHybridWebViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */,
+				71818B381A468E20001C2032 /* Supporting Files */,
+			);
+			path = HiFiHybridWebViewControllerTests;
+			sourceTree = "<group>";
+		};
+		71818B381A468E20001C2032 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71818B391A468E20001C2032 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71818B171A468E20001C2032 /* HiFiHybridWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71818B3E1A468E20001C2032 /* Build configuration list for PBXNativeTarget "HiFiHybridWebViewController" */;
+			buildPhases = (
+				71818B141A468E20001C2032 /* Sources */,
+				71818B151A468E20001C2032 /* Frameworks */,
+				71818B161A468E20001C2032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiFiHybridWebViewController;
+			productName = HiFiHybridWebViewController;
+			productReference = 71818B181A468E20001C2032 /* HiFiHybridWebViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71818B331A468E20001C2032 /* HiFiHybridWebViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71818B411A468E20001C2032 /* Build configuration list for PBXNativeTarget "HiFiHybridWebViewControllerTests" */;
+			buildPhases = (
+				71818B301A468E20001C2032 /* Sources */,
+				71818B311A468E20001C2032 /* Frameworks */,
+				71818B321A468E20001C2032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71818B361A468E20001C2032 /* PBXTargetDependency */,
+			);
+			name = HiFiHybridWebViewControllerTests;
+			productName = HiFiHybridWebViewControllerTests;
+			productReference = 71818B341A468E20001C2032 /* HiFiHybridWebViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71818B101A468E20001C2032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tokuya HIRAIZUMI";
+				TargetAttributes = {
+					71818B171A468E20001C2032 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					71818B331A468E20001C2032 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 71818B171A468E20001C2032;
+					};
+				};
+			};
+			buildConfigurationList = 71818B131A468E20001C2032 /* Build configuration list for PBXProject "HiFiHybridWebViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71818B0F1A468E20001C2032;
+			productRefGroup = 71818B191A468E20001C2032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71818B171A468E20001C2032 /* HiFiHybridWebViewController */,
+				71818B331A468E20001C2032 /* HiFiHybridWebViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71818B161A468E20001C2032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71818B2A1A468E20001C2032 /* Main.storyboard in Resources */,
+				71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */,
+				71818B2C1A468E20001C2032 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71818B321A468E20001C2032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71818B141A468E20001C2032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71818B271A468E20001C2032 /* SecondViewController.m in Sources */,
+				71818B211A468E20001C2032 /* AppDelegate.m in Sources */,
+				71818B241A468E20001C2032 /* FirstViewController.m in Sources */,
+				71818B1E1A468E20001C2032 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71818B301A468E20001C2032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71818B3B1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71818B361A468E20001C2032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71818B171A468E20001C2032 /* HiFiHybridWebViewController */;
+			targetProxy = 71818B351A468E20001C2032 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71818B281A468E20001C2032 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71818B291A468E20001C2032 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71818B2D1A468E20001C2032 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71818B2E1A468E20001C2032 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71818B3C1A468E20001C2032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71818B3D1A468E20001C2032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71818B3F1A468E20001C2032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HiFiHybridWebViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71818B401A468E20001C2032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HiFiHybridWebViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71818B421A468E20001C2032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HiFiHybridWebViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiFiHybridWebViewController.app/HiFiHybridWebViewController";
+			};
+			name = Debug;
+		};
+		71818B431A468E20001C2032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HiFiHybridWebViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiFiHybridWebViewController.app/HiFiHybridWebViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71818B131A468E20001C2032 /* Build configuration list for PBXProject "HiFiHybridWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71818B3C1A468E20001C2032 /* Debug */,
+				71818B3D1A468E20001C2032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71818B3E1A468E20001C2032 /* Build configuration list for PBXNativeTarget "HiFiHybridWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71818B3F1A468E20001C2032 /* Debug */,
+				71818B401A468E20001C2032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71818B411A468E20001C2032 /* Build configuration list for PBXNativeTarget "HiFiHybridWebViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71818B421A468E20001C2032 /* Debug */,
+				71818B431A468E20001C2032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71818B101A468E20001C2032 /* Project object */;
+}
