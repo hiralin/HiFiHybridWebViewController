@@ -15,6 +15,7 @@
 		71818B2C1A468E20001C2032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2B1A468E20001C2032 /* Images.xcassets */; };
 		71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2D1A468E20001C2032 /* LaunchScreen.xib */; };
 		71818B3B1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */; };
+		71818B471A468E68001C2032 /* HRLHiFiHybridWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B461A468E68001C2032 /* HRLHiFiHybridWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		71818B341A468E20001C2032 /* HiFiHybridWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiFiHybridWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71818B391A468E20001C2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiFiHybridWebViewControllerTests.m; sourceTree = "<group>"; };
+		71818B451A468E68001C2032 /* HRLHiFiHybridWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLHiFiHybridWebViewController.h; sourceTree = "<group>"; };
+		71818B461A468E68001C2032 /* HRLHiFiHybridWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLHiFiHybridWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +69,8 @@
 		71818B0F1A468E20001C2032 = {
 			isa = PBXGroup;
 			children = (
-				71818B1A1A468E20001C2032 /* HiFiHybridWebViewController */,
+				71818B441A468E68001C2032 /* HRLHiFiHybridWebViewController */,
+				71818B1A1A468E20001C2032 /* HiFiHybridWebViewControllerDemo */,
 				71818B371A468E20001C2032 /* HiFiHybridWebViewControllerTests */,
 				71818B191A468E20001C2032 /* Products */,
 			);
@@ -81,7 +85,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71818B1A1A468E20001C2032 /* HiFiHybridWebViewController */ = {
+		71818B1A1A468E20001C2032 /* HiFiHybridWebViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				71818B1F1A468E20001C2032 /* AppDelegate.h */,
@@ -95,6 +99,7 @@
 				71818B2D1A468E20001C2032 /* LaunchScreen.xib */,
 				71818B1B1A468E20001C2032 /* Supporting Files */,
 			);
+			name = HiFiHybridWebViewControllerDemo;
 			path = HiFiHybridWebViewController;
 			sourceTree = "<group>";
 		};
@@ -122,6 +127,15 @@
 				71818B391A468E20001C2032 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71818B441A468E68001C2032 /* HRLHiFiHybridWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71818B451A468E68001C2032 /* HRLHiFiHybridWebViewController.h */,
+				71818B461A468E68001C2032 /* HRLHiFiHybridWebViewController.m */,
+			);
+			path = HRLHiFiHybridWebViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +241,7 @@
 				71818B271A468E20001C2032 /* SecondViewController.m in Sources */,
 				71818B211A468E20001C2032 /* AppDelegate.m in Sources */,
 				71818B241A468E20001C2032 /* FirstViewController.m in Sources */,
+				71818B471A468E68001C2032 /* HRLHiFiHybridWebViewController.m in Sources */,
 				71818B1E1A468E20001C2032 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
