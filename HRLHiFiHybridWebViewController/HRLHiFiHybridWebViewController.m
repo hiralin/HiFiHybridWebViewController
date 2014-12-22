@@ -42,6 +42,7 @@
     _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_webView];
 
+    // progress creation
     _progressProxy = [[NJKWebViewProgress alloc] init];
     _webView.delegate = _progressProxy;
     _progressProxy.webViewProxyDelegate = self;
@@ -53,8 +54,16 @@
     CGRect barFrame = CGRectMake(0, navigaitonBarBounds.size.height - progressBarHeight, navigaitonBarBounds.size.width, progressBarHeight);
     _progressView = [[NJKWebViewProgressView alloc] initWithFrame:barFrame];
     _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+
+    // load webview
+    NSURL *url = [NSURL URLWithString:self.urlString];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
     
-    // startLoading
+    [_webView loadRequest:request];
+    
+    // show progress
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -66,13 +75,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    NSURL *url = [NSURL URLWithString:self.urlString];
-    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    
-    [_webView loadRequest:request];
-    
-    [SVProgressHUD show];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
