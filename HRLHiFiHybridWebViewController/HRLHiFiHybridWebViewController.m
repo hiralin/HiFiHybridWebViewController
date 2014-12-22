@@ -62,7 +62,7 @@
     [_webView loadRequest:request];
     
     // show progress
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeClear];
 
 }
 
