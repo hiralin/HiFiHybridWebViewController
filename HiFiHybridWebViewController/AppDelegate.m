@@ -20,29 +20,60 @@
     // Override point for customization after application launch.
     UITabBarController *rootTabBarController = (UITabBarController*)self.window.rootViewController;
 
+    // TODO: be plist implement
     NSArray * titles = @[@"home",
                          @"search",
                          @"proposing",
                          @"fav",
                          @"info"];
+    
     NSArray * urls = @[@"https://prime.heyazine.com/top",
                        @"https://prime.heyazine.com/search",
                        @"https://prime.heyazine.com/proposing_items",
                        @"https://prime.heyazine.com/favorites",
                        @"https://prime.heyazine.com/faq"];
 
+    NSArray * icons = @[@"icons/house28",
+                        @"icons/observation3",
+                        @"icons/man93",
+                        @"icons/heart56",
+                        @"icons/information27"];
     
     for (int i = 0; i < [titles count]; i++) {
         HRLHiFiHybridWebViewController *vc = [[HRLHiFiHybridWebViewController alloc] initWithNibName:nil bundle:nil urlString:urls[i]];
         
+        UIImage *resizedImage = [AppDelegate resizedImage:[UIImage imageNamed:icons[i]] width:28 height:28];
+        
         UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
         nvc.tabBarItem.title = titles[i];
+        nvc.tabBarItem.image = resizedImage;
         
         [rootTabBarController addChildViewController:nvc];
     }
     
     return YES;
 }
+
++ (UIImage *)resizedImage:(UIImage *)image width:(CGFloat)width height:(CGFloat)height
+{
+    if (UIGraphicsBeginImageContextWithOptions != NULL) {
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(width, height), NO, [[UIScreen mainScreen] scale]);
+    } else {
+        UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    }
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetInterpolationQuality(context, kCGInterpolationHigh);
+    
+    [image drawInRect:CGRectMake(0.0, 0.0, width, height)];
+    
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resizedImage;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

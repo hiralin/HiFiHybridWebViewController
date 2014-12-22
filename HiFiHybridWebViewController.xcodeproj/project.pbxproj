@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7134EA061A47BA4B00E5D721 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 7134EA051A47BA4B00E5D721 /* icons */; };
 		71818B1E1A468E20001C2032 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B1D1A468E20001C2032 /* main.m */; };
 		71818B211A468E20001C2032 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B201A468E20001C2032 /* AppDelegate.m */; };
-		71818B241A468E20001C2032 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B231A468E20001C2032 /* FirstViewController.m */; };
-		71818B271A468E20001C2032 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B261A468E20001C2032 /* SecondViewController.m */; };
 		71818B2A1A468E20001C2032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71818B281A468E20001C2032 /* Main.storyboard */; };
 		71818B2C1A468E20001C2032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2B1A468E20001C2032 /* Images.xcassets */; };
 		71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2D1A468E20001C2032 /* LaunchScreen.xib */; };
@@ -31,15 +30,12 @@
 
 /* Begin PBXFileReference section */
 		445C594AFE6561ABAB400F54 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7134EA051A47BA4B00E5D721 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../HRLHiFiHybridWebViewController/icons; sourceTree = "<group>"; };
 		71818B181A468E20001C2032 /* HiFiHybridWebViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFiHybridWebViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71818B1C1A468E20001C2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71818B1D1A468E20001C2032 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71818B1F1A468E20001C2032 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71818B201A468E20001C2032 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71818B221A468E20001C2032 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		71818B231A468E20001C2032 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		71818B251A468E20001C2032 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		71818B261A468E20001C2032 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		71818B291A468E20001C2032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71818B2B1A468E20001C2032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		71818B2E1A468E20001C2032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -106,12 +102,9 @@
 			children = (
 				71818B1F1A468E20001C2032 /* AppDelegate.h */,
 				71818B201A468E20001C2032 /* AppDelegate.m */,
-				71818B221A468E20001C2032 /* FirstViewController.h */,
-				71818B231A468E20001C2032 /* FirstViewController.m */,
-				71818B251A468E20001C2032 /* SecondViewController.h */,
-				71818B261A468E20001C2032 /* SecondViewController.m */,
 				71818B281A468E20001C2032 /* Main.storyboard */,
 				71818B2B1A468E20001C2032 /* Images.xcassets */,
+				7134EA051A47BA4B00E5D721 /* icons */,
 				71818B2D1A468E20001C2032 /* LaunchScreen.xib */,
 				71818B1B1A468E20001C2032 /* Supporting Files */,
 			);
@@ -246,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71818B2A1A468E20001C2032 /* Main.storyboard in Resources */,
+				7134EA061A47BA4B00E5D721 /* icons in Resources */,
 				71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */,
 				71818B2C1A468E20001C2032 /* Images.xcassets in Resources */,
 			);
@@ -298,9 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71818B271A468E20001C2032 /* SecondViewController.m in Sources */,
 				71818B211A468E20001C2032 /* AppDelegate.m in Sources */,
-				71818B241A468E20001C2032 /* FirstViewController.m in Sources */,
 				71818B471A468E68001C2032 /* HRLHiFiHybridWebViewController.m in Sources */,
 				71818B1E1A468E20001C2032 /* main.m in Sources */,
 			);
