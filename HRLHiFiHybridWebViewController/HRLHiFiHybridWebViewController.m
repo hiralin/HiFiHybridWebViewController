@@ -34,6 +34,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // reload button
+    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = reloadButton;
 
     // webview creation
     _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
@@ -57,10 +61,11 @@
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     
     [_webView loadRequest:request];
-    
-    // show progress
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeClear];
+}
 
+- (void)reloadButtonTapped:(id)sender
+{
+    [self.webView reload];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -98,6 +103,12 @@
     }
     
     return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    // show progress
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeNone];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
