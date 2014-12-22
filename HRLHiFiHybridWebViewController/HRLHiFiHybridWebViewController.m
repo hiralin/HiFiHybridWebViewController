@@ -11,9 +11,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface HRLHiFiHybridWebViewController ()
-
 @property (nonatomic, copy)     NSString *urlString;
-
 @end
 
 @implementation HRLHiFiHybridWebViewController
@@ -29,7 +27,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.urlString          = urlString;
-        
     }
     
     return self;
