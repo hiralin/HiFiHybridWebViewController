@@ -60,12 +60,15 @@
     NSURL *url = [NSURL URLWithString:self.urlString];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     
+    // show progress
     [_webView loadRequest:request];
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeNone];
 }
 
 - (void)reloadButtonTapped:(id)sender
 {
-    [self.webView reload];
+    [_webView reload];
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeNone];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -103,12 +106,6 @@
     }
     
     return YES;
-}
-
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-    // show progress
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeNone];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error

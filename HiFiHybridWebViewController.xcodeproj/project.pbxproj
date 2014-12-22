@@ -15,6 +15,7 @@
 		71818B2F1A468E20001C2032 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71818B2D1A468E20001C2032 /* LaunchScreen.xib */; };
 		71818B3B1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */; };
 		71818B471A468E68001C2032 /* HRLHiFiHybridWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71818B461A468E68001C2032 /* HRLHiFiHybridWebViewController.m */; };
+		71CD5B021A483EF6001119CE /* HRLTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CD5B011A483EF6001119CE /* HRLTabItem.m */; };
 		EB2A9229D615B7FB881D599F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 445C594AFE6561ABAB400F54 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		71818B3A1A468E20001C2032 /* HiFiHybridWebViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiFiHybridWebViewControllerTests.m; sourceTree = "<group>"; };
 		71818B451A468E68001C2032 /* HRLHiFiHybridWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLHiFiHybridWebViewController.h; sourceTree = "<group>"; };
 		71818B461A468E68001C2032 /* HRLHiFiHybridWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLHiFiHybridWebViewController.m; sourceTree = "<group>"; };
+		71CD5B001A483EF6001119CE /* HRLTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLTabItem.h; sourceTree = "<group>"; };
+		71CD5B011A483EF6001119CE /* HRLTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLTabItem.m; sourceTree = "<group>"; };
 		7ED8000E0E027CC0C05F08E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F9C3FA3869FB05920D1C9C1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +110,8 @@
 				7134EA051A47BA4B00E5D721 /* icons */,
 				71818B2D1A468E20001C2032 /* LaunchScreen.xib */,
 				71818B1B1A468E20001C2032 /* Supporting Files */,
+				71CD5B001A483EF6001119CE /* HRLTabItem.h */,
+				71CD5B011A483EF6001119CE /* HRLTabItem.m */,
 			);
 			name = HiFiHybridWebViewControllerDemo;
 			path = HiFiHybridWebViewController;
@@ -295,6 +300,7 @@
 				71818B211A468E20001C2032 /* AppDelegate.m in Sources */,
 				71818B471A468E68001C2032 /* HRLHiFiHybridWebViewController.m in Sources */,
 				71818B1E1A468E20001C2032 /* main.m in Sources */,
+				71CD5B021A483EF6001119CE /* HRLTabItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

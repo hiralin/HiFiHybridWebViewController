@@ -2,8 +2,51 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TabItemsMetaData</key>
+	<array>
+		<dict>
+			<key>iconpath</key>
+			<string>icons/house28</string>
+			<key>title</key>
+			<string>home</string>
+			<key>url</key>
+			<string>https://prime.heyazine.com/top</string>
+		</dict>
+		<dict>
+			<key>iconpath</key>
+			<string>icons/observation3</string>
+			<key>title</key>
+			<string>search</string>
+			<key>url</key>
+			<string>https://prime.heyazine.com/search</string>
+		</dict>
+		<dict>
+			<key>iconpath</key>
+			<string>icons/man93</string>
+			<key>title</key>
+			<string>proposing</string>
+			<key>url</key>
+			<string>https://prime.heyazine.com/proposing_items</string>
+		</dict>
+		<dict>
+			<key>iconpath</key>
+			<string>icons/heart56</string>
+			<key>title</key>
+			<string>fav</string>
+			<key>url</key>
+			<string>https://prime.heyazine.com/favorites</string>
+		</dict>
+		<dict>
+			<key>iconpath</key>
+			<string>icons/information27</string>
+			<key>title</key>
+			<string>info</string>
+			<key>url</key>
+			<string>https://prime.heyazine.com/faq</string>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>ja_JP</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
