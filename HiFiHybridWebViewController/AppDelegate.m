@@ -25,7 +25,7 @@
                          @"proposing",
                          @"fav",
                          @"info"];
-    NSArray * urls = @[@"https://prime.heyazine.com/",
+    NSArray * urls = @[@"https://prime.heyazine.com/top",
                        @"https://prime.heyazine.com/search",
                        @"https://prime.heyazine.com/proposing_items",
                        @"https://prime.heyazine.com/favorites",
